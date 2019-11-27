@@ -1,0 +1,212 @@
+<!doctype html>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+    <h1 style="color:Tomato;">Hello World</h1>
+  <p>This page is a sample resume.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Name')">Name</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Contact')">Contact</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Picture')">Picture</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Address')">Address</button>
+</div>
+
+<div id="Name" class="w3-container city">
+  <h2>Name</h2>
+    <p style="color:DodgerBlue;">Albert Bang</p>
+</div>
+
+<div id="Contact" class="w3-container city" style="display:none">
+  <h2>Contact</h2>
+  <p>This is my email :)</p>
+      <p style="color:MediumSeaGreen;">abang1@asu.edu</p>
+</div>
+
+<div id="Picture" class="w3-container city" style="display:none">
+  <h2>Picture</h2>
+  <p>And that's me in the bathroom ::))</p>
+      <img src="https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/69067636_674795282989582_98654441011412992_n.jpg?_nc_cat=104&amp;_nc_oc=AQnApVC_YZwLra6luS_WxZntf5q3MUgTvmRqqsrJsdfq91siuNNeXDC2a4vS7_IjcUA&amp;_nc_ht=scontent.fphx1-2.fna&amp;oh=80b443f4e0a0c92a0c6cc422f914aeee&amp;oe=5DFB9729" style="width: 333px; height: 333px;">
+
+</div>
+<div id="Address" class="w3-container city">
+  <h2>Address</h2>
+    <a href='https://goo.gl/maps/w78CUpJb5cBtJNtEA'>976 S Forest Mall, Tempe, AZ 85281</a>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+<html>
+    <title>this is title</title>
+  <head>
+<style>
+
+* {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+h1, h2 {
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+h2 {
+	margin: 0 0 1em 0;
+}
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: #eee;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: #ccc;
+}
+
+#accordion input:checked + label {
+	background: #ccc;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+
+
+
+    body {
+      background-color: lightblue;
+    }
+    h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+color: green;
+text-align: center;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+
+</head>
+  <body>
+
+<p style="color:Tomato;">My school</p>
+  <img src="https://www.asu.edu/asuthemes/4.8/assets/full_logo.png" height="111">
+<a href="https://asu.edu" target="_blank">This is a link</a>
+
+
+
+
+
+<p>I am a Junior working on my Bachelor's</p>
+
+<button>Button</button>
+<table style="width:100%">
+  <tr>
+    <th>Digital culture</th>
+    <th>Military science</th>
+    <th>Spiritual warfare</th>
+  </tr>
+  <tr>
+    <td>Standard</td>
+    <td>Army</td>
+    <td>Deliverance</td>
+  </tr>
+  <tr>
+    <td>Junior</td>
+    <td>MS3</td>
+
+  </tr>
+</table>
+  </body>
+</html>
+
+<p>I drink</p>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Water</li>
+</ol>
+<p>I am expreinced in</p>
+<body>
+	<div id="container">
+		<header>...<header>
+			<h2>Random skill sets :)</h2>
+
+		</header>
+		<section id="accordion">
+			<div>
+				<input type="checkbox" id="check-1" />
+				<label for="check-1">League of Legends</label>
+				<article>
+					<p>I can out play most players, I don't play ranked games because I don't want to get cancer.</p>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="check-2" />
+				<label for="check-2">Swimming</label>
+				<article>
+					<p>  I use to swim in middle school in a local team... so I won't drown and die.</p>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="check-3" />
+				<label for="check-3">Cooking fried rice</label>
+				<article>
+					<p>Can can make any kind of stir fried dish given the materials to work with.</p>
+				</article>
+      </div>
+
+		</section>
+  </div>
+</body>
